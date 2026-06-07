@@ -1,24 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- daisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Payoo-MFS</title>
-</head>
-<body class="w-10/12 mx-auto">
-    <h1 class="font-bold text-4xl">Payoo-MFS will be developed with tailwindcss and Daysi-UI, so the UI will be modern and responsive, without using raw CSS. let's get started!</h1>
-    <p> We are using tailwindcss CDN as beginner</p>
-    <p>Style sheet no longer needed, so im going to delete that.</p>
-    <p> As you can see after adding the CDN link, the styling is applied directly through Tailwind classes. As I Commented the cdn link, the styling is not applied. and uncommenting it has applied the styling.</p>
-    <p> lets get started!</p>
+  </head>
+  <body class="bg-[#f4f5f7] h-screen">
+    <form>
+      <div class="flex items-center justify-center h-screen">
+        <div class="w-full max-w-md p-8 bg-white rounded-lg shadow-lg">
+          <!-- Company Logo -->
+          <div class="m-8 p-6 relative">
+            <img
+              src="./assets/bg.png"
+              alt="Company Logo"
+              class="mx-auto w-40 h-40 mt-4 mb-4 absolute top-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            />
+            <img
+              src="./assets/Group.png"
+              alt="Company Logo"
+              class="w-15 h-15 mx-auto mt-0 mb-4 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            />
+          </div>
 
-    <p> we are also going to use Daysi-UI for the components. for pre cremated ui components.</p>
-    <p>Added the CDN link for daisyUI, now we can use daisyUI components in our project. for example, we can use the button component like this:</p>
-    <button class="btn btn-primary">Primary Button</button> 
-    <p>here is the demo:</p>
-</body>
+          <!-- Login Form -->
+          <h2 class="text-2xl font-bold mb-6 text-center">Payoo-MFS</h2>
+          <div class="mb-4">
+            <label for="username" class="block text-gray-700 font-bold mb-2"
+              >Mobile Number</label
+            >
+            <input
+              type="text"
+              id="username"
+              name="username"
+              class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+              placeholder="Enter your mobile number"
+              required
+            />
+          </div>
+          <div class="mb-6">
+            <label for="password" class="block text-gray-700 font-bold mb-2"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-blue-500 text-white py-2 rounded-2xl hover:bg-blue-600 transition duration-200"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </form>
+  </body>
 </html>
